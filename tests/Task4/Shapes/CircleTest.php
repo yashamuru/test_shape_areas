@@ -6,8 +6,8 @@ use PHPUnit\Framework\TestCase;
 use Enables\Task4\Shapes\Circle;
 
 
-class CircleTest extends BaseRegularShapeTestCase
-{
+class CircleTest extends BaseRegularShapeTestCase {
+
     public function testPerimeter() {
         $circle = new Circle();
 

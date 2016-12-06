@@ -6,8 +6,8 @@ use Enables\Task4\PolygonCalculator;
 use Enables\Task4\CSVParser;
 
 
-class CSVParserTest extends BaseRegularShapeTestCase
-{
+class CSVParserTest extends BaseRegularShapeTestCase {
+
     public function testProcessCSV() {
 
         $fileLocation = 'tests/Task4/testingCSV.csv';

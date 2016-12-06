@@ -5,8 +5,8 @@ namespace Tests\Task4\Shapes;
 use Enables\Task4\PolygonCalculator;
 
 
-class PolygonCalculatorTest extends BaseRegularShapeTestCase
-{
+class PolygonCalculatorTest extends BaseRegularShapeTestCase {
+
     /**
      * @expectedException InvalidArgumentException
      */

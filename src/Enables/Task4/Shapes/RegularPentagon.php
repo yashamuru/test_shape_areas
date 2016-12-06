@@ -4,8 +4,7 @@ namespace Enables\Task4\Shapes;
 
 class RegularPentagon extends RegularPolygonBase implements RegularShapeInterface {
 
-    public function getNumberOfSides()
-    {
+    public function getNumberOfSides() {
         return 5;
     }
 

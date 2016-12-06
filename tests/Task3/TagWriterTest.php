@@ -5,8 +5,8 @@ namespace Tests\Task3;
 use PHPUnit\Framework\TestCase;
 use Enables\Task3\TagWriter;
 
-class TagWriterTest extends TestCase
-{
+class TagWriterTest extends TestCase {
+
     /** @var  \Enables\TagWriter $tagWriter */
     private $tagWriter;
 

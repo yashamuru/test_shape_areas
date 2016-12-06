@@ -8,8 +8,7 @@ class Circle implements RegularShapeInterface {
 
     //For the sake of simplicity we're using setSide everywhere and it's added into the interface.
     //For the Circle it's just an alias to setRadius
-    public function setSide($side)
-    {
+    public function setSide($side) {
         $this->setRadius($side);
     }
 

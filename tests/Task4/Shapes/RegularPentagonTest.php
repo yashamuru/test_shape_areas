@@ -5,8 +5,8 @@ namespace Tests\Task4\Shapes;
 use PHPUnit\Framework\TestCase;
 use Enables\Task4\Shapes\RegularPentagon;
 
-class RegularPentagonTest extends BaseRegularShapeTestCase
-{
+class RegularPentagonTest extends BaseRegularShapeTestCase {
+
     public function testPerimeter() {
         $pentagon = new RegularPentagon();
 

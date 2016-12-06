@@ -5,8 +5,8 @@ namespace Tests\Task4\Shapes;
 use PHPUnit\Framework\TestCase;
 use Enables\Task4\Shapes\Square;
 
-class SquareTest extends BaseRegularShapeTestCase
-{
+class SquareTest extends BaseRegularShapeTestCase {
+
     public function testPerimeter() {
         $square = new Square();
 
