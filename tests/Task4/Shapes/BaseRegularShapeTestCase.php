@@ -1,9 +1,9 @@
 <?php
 
-namespace Tests\Task4;
+namespace Tests\Task4\Shapes;
 
 use PHPUnit\Framework\TestCase;
-use Enables\Task4\RegularShapeInterface;
+use Enables\Task4\Shapes\RegularShapeInterface;
 
 class BaseRegularShapeTestCase extends TestCase
 {
@@ -18,5 +18,4 @@ class BaseRegularShapeTestCase extends TestCase
         $object->setSide($side);
         $this->assertEquals(round($expected, $this->precision), round($object->getPerimeter(), $this->precision));
     }
-
 }

@@ -2,49 +2,105 @@
 
 namespace Enables\Task4;
 
+use Doctrine\Instantiator\Exception\InvalidArgumentException;
+use Enables\Task4\Shapes\Circle;
+use Enables\Task4\Shapes\RegularPentagon;
+use Enables\Task4\Shapes\RegularTriangle;
+use Enables\Task4\Shapes\Square;
 
 class PolygonCalculator {
 
+    const TYPE_CIRCLE = 'circle';
+    const TYPE_SQUARE = 'square';
+    const TYPE_TRIANGLE = 'triangle';
+    const TYPE_PENTAGON = 'pentagon';
+
+    /**
+     * The basic function for outputting the result of the task.
+     *
+     * @param $type
+     * @param $side
+     * @return string
+     */
     public function parseItem($type, $side) {
 
         $instance = $this->getInstance($type);
         $instance->setSide($side);
 
-        $perimeter = round($instance->getPerimeter(),2);
-        $area      = $this->formatNumber(round($instance->getArea(),2));
+        $perimeter = $instance->getPerimeter();
+        $area      = $instance->getArea();
 
-        return "A {$type} with side length {$side} u has a perimeter of {$perimeter} u and an area of {$area} u^2";
+        return $this->formatItem($type, $side, $perimeter, $area);
     }
 
-    public function formatNumber($num) {
-        //Add the trailing 0 if needed:
-        if (is_int($num)) {
-            return $num;
-        }else if (round($num,1) == $num) {
-            return $num .= 0;
+    /**
+     * A function to format the result into the required format.
+     *
+     * @param $type - One of the allowed types we have
+     * @param $side - The side (as passed in the CSV).
+     * @param $perimeter - The perimeter.
+     * @param $area - The area surface.
+     *
+     * @return string - The properly formatted result.
+     */
+    private function formatItem($type, $side, $perimeter, $area) {
+        $area = $this->formatNumber($area);
+        $perimeter = $this->formatNumber($perimeter);
+
+        if ($type == self::TYPE_CIRCLE) {
+            $sideName = "radius";
         }else {
-            return $num;
+            $sideName = "side length";
         }
+
+        return "A {$type} with {$sideName} {$side} u has a perimeter of {$perimeter} u and an area of {$area} u^2";
     }
 
+    /**
+     * A function to perform basic number-formatting on the numbers.
+     * Right now it does:
+     *      - Add trailing zeros (in case of floats like 5.1)
+     *
+     * @param $num
+     * @return float|string
+     */
+    public function formatNumber($num) {
+        $num = round($num, 2);
+
+        //Add the trailing 0 if needed:
+        if (round($num,1) == $num && strpos($num, '.') !== false) {
+            $num .= '0';
+         }
+         return (string)$num;
+    }
+
+    /**
+     * Instantiates the corresponding shape instance by the provided type.
+     *
+     * @param $type
+     * @throws InvalidArgumentException - In case the type is not one of the available ones.
+     * @return Circle|RegularPentagon|RegularTriangle|Square
+     */
     private function getInstance($type) {
 
         switch($type) {
-            case 'circle':
+            case self::TYPE_CIRCLE:
                 return new Circle();
             break;
-            case 'square':
+            case self::TYPE_SQUARE:
                 return new Square();
             break;
-            case 'triangle':
+            case self::TYPE_TRIANGLE:
                 return new RegularTriangle();
             break;
-            case 'pentagon':
+            case self::TYPE_PENTAGON:
                 return new RegularPentagon();
             break;
         }
 
         throw new \InvalidArgumentException('Unknown type'.$type);
     }
+
+
 }
 

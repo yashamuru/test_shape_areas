@@ -10,3 +10,9 @@ echo $tagWriter->process('abcdef');
 
 echo PHP_EOL;
 echo 'Task4 :'.PHP_EOL;
+
+$calculator = new Enables\Task4\PolygonCalculator();
+$parser = new Enables\Task4\CSVParser();
+$parser->setCalculator($calculator);
+
+echo $parser->processCSV('dataTask4.csv');

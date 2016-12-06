@@ -1,9 +1,9 @@
 <?php
 
-namespace Tests\Task4;
+namespace Tests\Task4\Shapes;
 
 use PHPUnit\Framework\TestCase;
-use Enables\Task4\RegularTriangle;
+use Enables\Task4\Shapes\RegularTriangle;
 
 class RegularTriangleTest extends BaseRegularShapeTestCase
 {

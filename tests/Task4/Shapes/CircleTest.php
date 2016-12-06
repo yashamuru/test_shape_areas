@@ -1,9 +1,9 @@
 <?php
 
-namespace Tests\Task4;
+namespace Tests\Task4\Shapes;
 
 use PHPUnit\Framework\TestCase;
-use Enables\Task4\Circle;
+use Enables\Task4\Shapes\Circle;
 
 
 class CircleTest extends BaseRegularShapeTestCase

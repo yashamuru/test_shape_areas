@@ -1,6 +1,6 @@
 <?php
 
-namespace Enables\Task4;
+namespace Enables\Task4\Shapes;
 
 class Square extends RegularPolygonBase {
 
