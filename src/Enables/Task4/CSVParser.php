@@ -19,7 +19,7 @@ class CSVParser {
             if (empty($items[0]) || ! isset($items[1])) {
                 continue;
             }
-            $result .= $this->calculator->parseItem($items[0], $items[1]).PHP_EOL;
+            $result .= $this->calculator->parseItem( trim($items[0]), trim($items[1])).PHP_EOL;
         }
         fclose($handle);
         return $result;

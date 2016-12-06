@@ -1,0 +1,7 @@
+Here we only test which lines are getting parsed and which - skipped.
+triangle,3.5
+triangle -- skip - no parameters provided.
+circle, 2
+,2 --skip no type provided.
+square,19.12
+pentagon,8.31

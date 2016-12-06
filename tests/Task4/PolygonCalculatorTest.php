@@ -15,6 +15,7 @@ class PolygonCalculatorTest extends BaseRegularShapeTestCase
         $calculator->parseItem("tsvetan.nenov", 3.5);
     }
 
+    //Added the trailing 0 in the first test ( 10.5 becomes 10.50 ).
     public function testParseItem() {
         $calculator = new PolygonCalculator();
         $this->assertEquals($calculator->parseItem('triangle', 3.5), 'A triangle with side length 3.5 u has a perimeter of 10.50 u and an area of 5.30 u^2');

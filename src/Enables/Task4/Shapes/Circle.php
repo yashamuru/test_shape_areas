@@ -6,7 +6,8 @@ class Circle implements RegularShapeInterface {
 
     protected $radius;
 
-    //I finally decided to let the Circle having radius instead of side.
+    //For the sake of simplicity we're using setSide everywhere and it's added into the interface.
+    //For the Circle it's just an alias to setRadius
     public function setSide($side)
     {
         $this->setRadius($side);
