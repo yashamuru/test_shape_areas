@@ -1,4 +1,7 @@
 <?php
+
+namespace Tests\Task3;
+
 use PHPUnit\Framework\TestCase;
 use Enables\Task3\TagWriter;
 

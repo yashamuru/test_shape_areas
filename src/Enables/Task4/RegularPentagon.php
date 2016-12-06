@@ -2,7 +2,7 @@
 
 namespace Enables\Task4;
 
-class Triangle extends BaseShape implements RegularShapeInterface {
+class RegularPentagon extends RegularShapeBase implements RegularShapeInterface {
 
     public function getArea() {
 

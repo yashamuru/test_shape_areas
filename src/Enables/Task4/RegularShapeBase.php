@@ -2,7 +2,7 @@
 
 namespace Enables\Task4;
 
-class BaseShape {
+class RegularShapeBase {
 
     protected $side;
 
