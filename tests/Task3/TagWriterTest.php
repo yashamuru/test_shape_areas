@@ -1,6 +1,6 @@
 <?php
 use PHPUnit\Framework\TestCase;
-use Enables\TagWriter;
+use Enables\Task3\TagWriter;
 
 class TagWriterTest extends TestCase
 {
