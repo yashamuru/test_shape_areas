@@ -2,14 +2,16 @@
 
 namespace Enables\Task4;
 
-class RegularTriangle extends RegularShapeBase implements RegularShapeInterface {
+class RegularTriangle extends RegularPolygonBase implements RegularShapeInterface {
 
-    public function getArea() {
-        return sqrt(3)*($this->side**2)/4;
+    public function getNumberOfSides()
+    {
+        return 3;
     }
 
-    public function getPerimeter() {
-        return 3*$this->side;
+    public function getAreaCoefficient() {
+        return (sqrt(3)/4);
     }
+
 }
 

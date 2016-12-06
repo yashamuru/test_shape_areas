@@ -13,7 +13,6 @@ class CircleTest extends BaseRegularShapeTestCase
 
         $circle->setSide(0);
         $this->assertEquals(0, $circle->getPerimeter());
-
         //Or alternatively using the parent's class method:
         $this->checkPerimeter($circle, 3, 18.85);
 

@@ -2,14 +2,16 @@
 
 namespace Enables\Task4;
 
-class RegularPentagon extends RegularShapeBase implements RegularShapeInterface {
+class RegularPentagon extends RegularPolygonBase implements RegularShapeInterface {
 
-    public function getArea() {
-
+    public function getNumberOfSides()
+    {
+        return 5;
     }
 
-    public function getPerimeter() {
-
+    public function getAreaCoefficient() {
+        return (sqrt(5*(5+2*sqrt(5)))/4);
     }
+
 }
 

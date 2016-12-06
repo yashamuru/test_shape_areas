@@ -2,7 +2,9 @@
 
 namespace Enables\Task4;
 
-class Circle extends RegularShapeBase implements RegularShapeInterface {
+class Circle implements RegularShapeInterface {
+
+    protected $radius;
 
     //I finally decided to let the Circle having radius instead of side.
     public function setSide($side)

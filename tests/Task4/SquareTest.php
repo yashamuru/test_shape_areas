@@ -10,26 +10,16 @@ class SquareTest extends BaseRegularShapeTestCase
     public function testPerimeter() {
         $square = new Square();
 
-        $square->setSide(0);
-        $this->assertEquals(0, $square->getPerimeter());
-
-        $square->setSide(3);
-        $this->assertEquals(12, $square->getPerimeter());
-
-        $square->setSide(10);
-        $this->assertEquals(40, $square->getPerimeter());
+        $this->checkPerimeter($square, 0, 0);
+        $this->checkPerimeter($square, 3, 12);
+        $this->checkPerimeter($square, 10, 40);
     }
 
     public function testArea() {
         $square = new Square();
 
-        $square->setSide(0);
-        $this->assertEquals(0, $square->getArea());
-
-        $square->setSide(12);
-        $this->assertEquals(144, $square->getArea());
-
-        $square->setSide(25.7);
-        $this->assertEquals(660.49, round($square->getArea(),2));
+        $this->checkArea($square, 0, 0);
+        $this->checkArea($square, 12, 144);
+        $this->checkArea($square, 25.7, 660.49);
     }
 }
