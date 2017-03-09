@@ -17,7 +17,7 @@ class Circle implements RegularShapeInterface {
     }
 
     public function getArea() {
-        return ($this->radius**2)*pi();
+        return pow($this->radius,2)*pi();
     }
 
     public function getPerimeter() {

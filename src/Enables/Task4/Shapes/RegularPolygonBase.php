@@ -15,7 +15,7 @@ abstract class RegularPolygonBase implements RegularShapeInterface {
     }
 
     public function getArea() {
-        return ($this->side**2)*$this->getAreaCoefficient();
+        return pow($this->side,2)*$this->getAreaCoefficient();
     }
 
     abstract public function getAreaCoefficient();
