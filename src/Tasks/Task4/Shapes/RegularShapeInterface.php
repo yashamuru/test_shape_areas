@@ -1,6 +1,6 @@
 <?php
 
-namespace Enables\Task4\Shapes;
+namespace Tasks\Task4\Shapes;
 
 interface RegularShapeInterface {
 

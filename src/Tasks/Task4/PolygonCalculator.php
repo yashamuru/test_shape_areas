@@ -1,12 +1,12 @@
 <?php
 
-namespace Enables\Task4;
+namespace Tasks\Task4;
 
 use Doctrine\Instantiator\Exception\InvalidArgumentException;
-use Enables\Task4\Shapes\Circle;
-use Enables\Task4\Shapes\RegularPentagon;
-use Enables\Task4\Shapes\RegularTriangle;
-use Enables\Task4\Shapes\Square;
+use Tasks\Task4\Shapes\Circle;
+use Tasks\Task4\Shapes\RegularPentagon;
+use Tasks\Task4\Shapes\RegularTriangle;
+use Tasks\Task4\Shapes\Square;
 
 class PolygonCalculator {
 
@@ -100,7 +100,5 @@ class PolygonCalculator {
 
         throw new \InvalidArgumentException('Unknown type'.$type);
     }
-
-
 }
 

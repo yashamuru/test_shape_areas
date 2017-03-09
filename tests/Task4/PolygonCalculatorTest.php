@@ -2,8 +2,7 @@
 
 namespace Tests\Task4\Shapes;
 
-use Enables\Task4\PolygonCalculator;
-
+use Tasks\Task4\PolygonCalculator;
 
 class PolygonCalculatorTest extends BaseRegularShapeTestCase {
 
@@ -29,6 +28,5 @@ class PolygonCalculatorTest extends BaseRegularShapeTestCase {
         $this->assertEquals("33", $calculator->formatNumber(33) );
         $this->assertEquals("192.12", $calculator->formatNumber(192.12) );
     }
-
 }
 

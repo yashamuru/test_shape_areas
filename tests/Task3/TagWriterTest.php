@@ -3,11 +3,11 @@
 namespace Tests\Task3;
 
 use PHPUnit\Framework\TestCase;
-use Enables\Task3\TagWriter;
+use Tasks\Task3\TagWriter;
 
 class TagWriterTest extends TestCase {
 
-    /** @var  \Enables\TagWriter $tagWriter */
+    /** @var  \Tasks\TagWriter $tagWriter */
     private $tagWriter;
 
     /**

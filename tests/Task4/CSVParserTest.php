@@ -2,9 +2,8 @@
 
 namespace Tests\Task4\Shapes;
 
-use Enables\Task4\PolygonCalculator;
-use Enables\Task4\CSVParser;
-
+use Tasks\Task4\PolygonCalculator;
+use Tasks\Task4\CSVParser;
 
 class CSVParserTest extends BaseRegularShapeTestCase {
 
@@ -26,6 +25,5 @@ class CSVParserTest extends BaseRegularShapeTestCase {
 
         $this->assertEquals($expected, $result);
     }
-
 }
 

@@ -1,7 +1,6 @@
 <?php
 
-namespace Enables\Task4;
-
+namespace Tasks\Task4;
 
 class CSVParser {
 
@@ -24,6 +23,5 @@ class CSVParser {
         fclose($handle);
         return $result;
     }
-
 }
 
