@@ -3,7 +3,7 @@
 namespace Tests\Task4\Shapes;
 
 use PHPUnit\Framework\TestCase;
-use Enables\Task4\Shapes\RegularShapeInterface;
+use Tasks\Task4\Shapes\RegularShapeInterface;
 
 class BaseRegularShapeTestCase extends TestCase {
 

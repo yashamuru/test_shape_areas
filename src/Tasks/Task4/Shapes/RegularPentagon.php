@@ -1,6 +1,6 @@
 <?php
 
-namespace Enables\Task4\Shapes;
+namespace Tasks\Task4\Shapes;
 
 class RegularPentagon extends RegularPolygonBase implements RegularShapeInterface {
 
@@ -11,6 +11,5 @@ class RegularPentagon extends RegularPolygonBase implements RegularShapeInterfac
     public function getAreaCoefficient() {
         return (sqrt(5*(5+2*sqrt(5)))/4);
     }
-
 }
 

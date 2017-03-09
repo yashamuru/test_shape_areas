@@ -1,7 +1,6 @@
 <?php
 
-namespace Enables\Task3;
-
+namespace Tasks\Task3;
 
 class TagWriter {
 

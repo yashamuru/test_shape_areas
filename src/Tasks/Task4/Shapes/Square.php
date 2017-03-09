@@ -1,6 +1,6 @@
 <?php
 
-namespace Enables\Task4\Shapes;
+namespace Tasks\Task4\Shapes;
 
 class Square extends RegularPolygonBase {
 
@@ -11,6 +11,5 @@ class Square extends RegularPolygonBase {
     public function getAreaCoefficient() {
         return 1;
     }
-
 }
 

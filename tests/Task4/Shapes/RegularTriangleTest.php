@@ -3,7 +3,7 @@
 namespace Tests\Task4\Shapes;
 
 use PHPUnit\Framework\TestCase;
-use Enables\Task4\Shapes\RegularTriangle;
+use Tasks\Task4\Shapes\RegularTriangle;
 
 class RegularTriangleTest extends BaseRegularShapeTestCase {
 
@@ -24,5 +24,4 @@ class RegularTriangleTest extends BaseRegularShapeTestCase {
         $this->checkArea($triangle, 24.3, 255.69);
         $this->checkArea($triangle, 35.6, 548.78);
     }
-
 }

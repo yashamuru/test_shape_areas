@@ -1,6 +1,6 @@
 <?php
 
-namespace Enables\Task4\Shapes;
+namespace Tasks\Task4\Shapes;
 
 class RegularTriangle extends RegularPolygonBase implements RegularShapeInterface {
 
@@ -11,6 +11,5 @@ class RegularTriangle extends RegularPolygonBase implements RegularShapeInterfac
     public function getAreaCoefficient() {
         return (sqrt(3)/4);
     }
-
 }
 
