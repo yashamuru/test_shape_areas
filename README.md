@@ -1,10 +1,10 @@
 # test_shape_areas
-A test I did recently. 
+A test I did recently.
 
 - Requirements : php version >= 5.6 (developed and tested on 7.1).
-- Installation: download to a folder of your choise. Do a composer update. To run the tests type `phpunit .` in the console.
+- Installation: download to a folder of your choise. Do a composer update. To run the tests type `phpunit tests` in the console.
 
-## Task 3 is : 
+## Task 3 is :
 
 For the array of letters (a, b, c, d, e, f), write a recursive function that outputs the following structure:
 

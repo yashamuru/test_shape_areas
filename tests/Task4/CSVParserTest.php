@@ -2,10 +2,11 @@
 
 namespace Tests\Task4\Shapes;
 
+use PHPUnit\Framework\TestCase;
 use Tasks\Task4\PolygonCalculator;
 use Tasks\Task4\CSVParser;
 
-class CSVParserTest extends BaseRegularShapeTestCase {
+class CSVParserTest extends TestCase {
 
     public function testProcessCSV() {
 
@@ -26,4 +27,3 @@ class CSVParserTest extends BaseRegularShapeTestCase {
         $this->assertEquals($expected, $result);
     }
 }
-

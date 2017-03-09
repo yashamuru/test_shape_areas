@@ -2,9 +2,10 @@
 
 namespace Tests\Task4\Shapes;
 
+use PHPUnit\Framework\TestCase;
 use Tasks\Task4\PolygonCalculator;
 
-class PolygonCalculatorTest extends BaseRegularShapeTestCase {
+class PolygonCalculatorTest extends TestCase {
 
     /**
      * @expectedException InvalidArgumentException
@@ -29,4 +30,3 @@ class PolygonCalculatorTest extends BaseRegularShapeTestCase {
         $this->assertEquals("192.12", $calculator->formatNumber(192.12) );
     }
 }
-
